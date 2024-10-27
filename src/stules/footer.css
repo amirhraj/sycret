@@ -1,0 +1,120 @@
+footer{
+
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-container{
+width: 1500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+display: flex;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 40px;
+}
+
+
+.footer-navigation {
+    display: flex;
+    justify-content: center; /* Центрирует блок навигации */
+    padding: 20px;
+   
+}
+
+.footer-navigation__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Разбивает на три столбца */
+    gap: 10px; /* Задает расстояние между элементами */
+    list-style: none; /* Убирает маркеры списка */
+    padding: 0;
+    margin: 0;
+   
+}
+
+.navigation-item {
+    font-size: 16px;
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-left: 100px;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    
+}
+
+.navigation-item a:hover {
+    color: #007BFF; /* Цвет текста при наведении */
+}
+
+
+@media (max-width: 768px) {
+
+    footer{
+        width: 360px;
+        background-color: #333333;
+  
+ 
+    }
+    .logo-container{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footer-container {
+        width: 360px;
+        flex-direction: column;
+        
+    }
+    .right{
+        width: 300px;
+        height: 164px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .footer-navigation {
+        width: 300px;
+        margin-top: 10px;
+        justify-content: center;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-navigation__list {
+        grid-template-columns: repeat(1, 1fr); /* Разбивка на 2 колонки на маленьких экранах */
+        gap: 5px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+
+    .navigation-item {
+        font-size: 14px;
+        text-align: center; /* Выравнивание по центру для мобильных */
+        margin: 0;
+    }
+}
